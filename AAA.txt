@@ -1,0 +1,22 @@
+create database uc;
+
+use database uc;
+
+create table cliente(
+idcliente bigint auto_increment,
+nomecli varchar(50) not null,
+datanasccli varchar(20) not null,
+cpfcli varchar(20) not null,
+cidadecli varchar(50) not null,
+estadocli varchar(10) not null,
+emailcli varchar(50) not null,
+senhacli varchar(50) not null,
+primary key(idcliente)
+);
+
+create table relatorio(
+idrelatorio bigint auto_increment,
+relatorio varchar(100) not null,
+status varchar(50) not null,
+primary key(idrelatorio)
+);
